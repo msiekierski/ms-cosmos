@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ms-cosmos/static/css/main.70181c9f.chunk.css",
+    "main.js": "/ms-cosmos/static/js/main.c8691867.chunk.js",
+    "main.js.map": "/ms-cosmos/static/js/main.c8691867.chunk.js.map",
+    "runtime-main.js": "/ms-cosmos/static/js/runtime-main.0dd46863.js",
+    "runtime-main.js.map": "/ms-cosmos/static/js/runtime-main.0dd46863.js.map",
+    "static/js/2.19f7e54d.chunk.js": "/ms-cosmos/static/js/2.19f7e54d.chunk.js",
+    "static/js/2.19f7e54d.chunk.js.map": "/ms-cosmos/static/js/2.19f7e54d.chunk.js.map",
+    "index.html": "/ms-cosmos/index.html",
+    "static/css/main.70181c9f.chunk.css.map": "/ms-cosmos/static/css/main.70181c9f.chunk.css.map",
+    "static/js/2.19f7e54d.chunk.js.LICENSE.txt": "/ms-cosmos/static/js/2.19f7e54d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/ms-cosmos/static/media/smoke2.be4146a2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0dd46863.js",
+    "static/js/2.19f7e54d.chunk.js",
+    "static/css/main.70181c9f.chunk.css",
+    "static/js/main.c8691867.chunk.js"
+  ]
+}
