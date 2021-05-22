@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useAppContext } from "./context";
+import { useAppContext } from "../context";
+import "../Link/link.css";
 
 const Link = ({ title }) => {
   const { openModal } = useAppContext();

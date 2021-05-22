@@ -1,8 +1,8 @@
 import "./index.css";
 import Logo from "./components/Logo";
-import BackgroundElements from "./components/BackgroundElements";
+import BackgroundElements from "./components/BackgroundElements/BackgroundElements";
 import Links from "./components/Links";
-import Modal from "./components/Modal";
+import Modal from "./components/Modal/Modal";
 import { useAppContext } from "./components/context";
 import { useRef } from "react";
 
@@ -49,7 +49,7 @@ function App() {
       </div>
       <footer>
         <div className="body-small">Copyright © Usertive & SpaceX API</div>
-        <div className="body-small">Recruiment Task / Summer 2021</div>
+        <div className="body-small">Recruitment Task / Summer 2021</div>
       </footer>
     </>
   );

@@ -1,0 +1,111 @@
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(180deg, #2b2347 0%, #221b3a 100%);
+  z-index: -1;
+}
+
+#circle1 {
+  position: absolute;
+  left: -12.29%;
+  right: 88.23%;
+  top: 41.93%;
+  bottom: 12.97%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#circle2 {
+  position: absolute;
+  left: 33.82%;
+  right: 42.12%;
+  top: -26.82%;
+  bottom: 81.72%;
+}
+
+#circle3 {
+  position: absolute;
+  left: 86.53%;
+  right: -10.58%;
+  top: 14.06%;
+  bottom: 40.83%;
+}
+
+.circle-inner {
+  background-color: #221b3a;
+  position: relative;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+#inner1 {
+  top: 10%;
+  left: 10%; /* of the container */
+  width: 80%; /* of the container */
+  height: 80%; /* of the container */
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#inner2 {
+  top: 10%;
+  left: 10%; /* of the container */
+  width: 80%; /* of the container */
+  height: 80%; /* of the container */
+}
+#inner3 {
+  top: 10%;
+  left: 10%; /* of the container */
+  width: 90%; /* of the container */
+  height: 80%; /* of the container */
+}
+
+.path {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: -3;
+}
+
+#path108 {
+  left: 46.04%;
+  right: 53.4%;
+  top: 84.9%;
+  bottom: 14.06%;
+  background: #7860d7;
+  z-index: -3;
+}
+
+#path109 {
+  left: 5.83%;
+  right: 93.61%;
+  top: 18.75%;
+  bottom: 80.21%;
+  background: #e34a67;
+  z-index: -3;
+}
+
+#path107 {
+  left: 87.64%;
+  right: 11.81%;
+  top: 71.88%;
+  bottom: 27.08%;
+  z-index: -3;
+  background: #e34a67;
+}
+
+#path110 {
+  left: 20.83%;
+  right: 78.61%;
+  top: 65.1%;
+  bottom: 33.85%;
+  z-index: -3;
+  background: #00c9b7;
+}
+
+#path106 {
+  left: 60.97%;
+  right: 38.47%;
+  top: 10.94%;
+  bottom: 88.02%;
+  z-index: -3;
+  background: #00c9b7;
+}

@@ -28,8 +28,7 @@ const initState = {
   isError: false,
   col1: "",
   col2: "",
-  col1Sort: 0,
-  col2Sort: 0,
+  sortCount: { col1Sort: 0, col2Sort: 0 },
 };
 
 const AppContextProvider = ({ children }) => {
@@ -68,12 +67,12 @@ const AppContextProvider = ({ children }) => {
     }
   }, [state.selectedTile, state.isModalShown]);
 
-  const triggerSortCol1 = () => {
-    dispatch({ type: SORT_COL1 });
-  };
-
-  const triggerSortCol2 = () => {
-    dispatch({ type: SORT_COL2 });
+  const triggerSort = (colNo) => {
+    if (colNo === 1) {
+      dispatch({ type: SORT_COL1 });
+    } else if (colNo === 2) {
+      dispatch({ type: SORT_COL2 });
+    }
   };
 
   return (
@@ -82,8 +81,7 @@ const AppContextProvider = ({ children }) => {
         ...state,
         openModal,
         closeModal,
-        triggerSortCol1,
-        triggerSortCol2,
+        triggerSort,
       }}
     >
       {children}

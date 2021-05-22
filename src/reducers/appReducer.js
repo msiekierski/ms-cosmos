@@ -18,8 +18,7 @@ const appReducer = (state, action) => {
       ...state,
       isModalShown: false,
       data: [],
-      col1Sort: 0,
-      col2Sort: 0,
+      sortCount: { col1Sort: 0, col2Sort: 0 },
     };
   } else if (action.type === BEGIN_FETCH) {
     return { ...state, isLoading: true };
@@ -50,50 +49,44 @@ const appReducer = (state, action) => {
   } else if (action.type === FETCH_ERROR) {
     return { ...state, isLoading: false, isError: true, data: [] };
   } else if (action.type === SORT_COL1) {
-    const nextSort = (state.col1Sort + 1) % SORT_TYPES.length;
+    const nextSort = (state.sortCount.col1Sort + 1) % SORT_TYPES.length;
     if (SORT_TYPES[nextSort] === NONE) {
       return {
         ...state,
-        col1Sort: nextSort,
-        col2Sort: nextSort,
+        sortCount: { col1Sort: nextSort, col2Sort: nextSort },
         data: state.data.sort(None),
       };
     } else if (SORT_TYPES[nextSort] === ASC) {
       return {
         ...state,
-        col1Sort: nextSort,
-        col2Sort: 0,
+        sortCount: { col1Sort: nextSort, col2Sort: 0 },
         data: state.data.sort(AscByCol1),
       };
     } else if (SORT_TYPES[nextSort] === DESC) {
       return {
         ...state,
-        col1Sort: nextSort,
-        col2Sort: 0,
+        sortCount: { col1Sort: nextSort, col2Sort: 0 },
         data: state.data.sort(DescByCol1),
       };
     }
   } else if (action.type === SORT_COL2) {
-    const nextSort = (state.col2Sort + 1) % SORT_TYPES.length;
+    const nextSort = (state.sortCount.col2Sort + 1) % SORT_TYPES.length;
     if (SORT_TYPES[nextSort] === NONE) {
       return {
         ...state,
-        col1Sort: nextSort,
-        col2Sort: nextSort,
+        sortCount: { col1Sort: nextSort, col2Sort: nextSort },
         data: state.data.sort(None),
       };
     } else if (SORT_TYPES[nextSort] === ASC) {
       return {
         ...state,
-        col1Sort: 0,
-        col2Sort: nextSort,
+        sortCount: { col1Sort: 0, col2Sort: nextSort },
         data: state.data.sort(AscByCol2),
       };
     } else if (SORT_TYPES[nextSort] === DESC) {
       return {
         ...state,
-        col1Sort: 0,
-        col2Sort: nextSort,
+        sortCount: { col1Sort: 0, col2Sort: nextSort },
         data: state.data.sort(DescByCol2),
       };
     }
