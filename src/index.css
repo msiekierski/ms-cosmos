@@ -260,7 +260,7 @@ html {
       #2b224a 0%,
       rgba(43, 34, 74, 0) 100%
     ),
-    url("./resources/Capsules.png");
+    url("./resources/Capsules.webp");
   border-radius: 1rem;
 }
 
@@ -272,7 +272,7 @@ html {
       #2b224a 0%,
       rgba(43, 34, 74, 0) 100%
     ),
-    url("./resources/Crew.png");
+    url("./resources/Crew.webp");
   border-radius: 1rem;
 }
 
@@ -284,7 +284,7 @@ html {
       #2b224a 0%,
       rgba(43, 34, 74, 0) 100%
     ),
-    url("./resources/Starlink.png");
+    url("./resources/Starlink.webp");
   border-radius: 1rem;
 }
 
@@ -296,7 +296,7 @@ html {
       #2b224a 0%,
       rgba(43, 34, 74, 0) 100%
     ),
-    url("./resources/Rockets.png");
+    url("./resources/Rockets.webp");
   border-radius: 1rem;
 }
 
@@ -491,7 +491,7 @@ table tbody tr {
 }
 
 .planet-img {
-  background-image: url("/src/resources/planet.png");
+  background-image: url("/src/resources/planet.webp");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -548,7 +548,7 @@ table tbody tr {
 }
 
 #rocket {
-  background-image: url("/src/resources/rocket.png");
+  background-image: url("/src/resources/rocket.webp");
   height: 96.55%;
   width: 55.14%;
   top: 0;
